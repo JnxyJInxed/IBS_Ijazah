@@ -495,7 +495,8 @@ def extract(ID, s):
 
   Q_id =  H1(str(ID))
 
-  rID = getRmid()%p
+  # rID = getRmid()%p
+  rID = 7 #buat testing dengan bang hanang
   d_ID = ((rID+s)*Q_id)%p
 
   V_ID = muliplication_point(rID, P, p, a) #rID*P
