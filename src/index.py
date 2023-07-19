@@ -495,8 +495,7 @@ def extract(ID, s):
 
   Q_id =  H1(str(ID))
 
-  # rID = getRmid()%p
-  rID = 1351095810306068139124510697482103043048115624428965073737 #buat testing dengan bang hanang
+  rID = getRmid()%p
   d_ID = ((rID+s)*Q_id)%p
 
   V_ID = muliplication_point(rID, P, p, a) #rID*P
@@ -510,8 +509,8 @@ def sign(ID, m, d_ID, Z_ID, Pub):
   # Pick a random number r_mid E Z/L* //r E {0,1,..l-1}
   # at random corresponding to m and ID
 
-  # x_ID = getRmid()%n
-  x_ID = 1351095810306068139124510697482103043048115624428965073737 #buat testing dengan bang hanang
+  x_ID = getRmid()%n
+  # x_ID = 1351095810306068139124510697482103043048115624428965073737 #buat testing dengan bang hanang
   print('x_ID = ', x_ID)
 
   S1 = muliplication_point(x_ID, Z_ID, p, a) #x_ID*Z_ID
