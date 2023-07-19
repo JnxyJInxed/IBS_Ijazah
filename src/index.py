@@ -510,7 +510,8 @@ def sign(ID, m, d_ID, Z_ID, Pub):
   # Pick a random number r_mid E Z/L* //r E {0,1,..l-1}
   # at random corresponding to m and ID
 
-  x_ID = getRmid()%n
+  # x_ID = getRmid()%n
+  x_ID = 7 #buat testing dengan bang hanang
   print('x_ID = ', x_ID)
 
   S1 = muliplication_point(x_ID, Z_ID, p, a) #x_ID*Z_ID
